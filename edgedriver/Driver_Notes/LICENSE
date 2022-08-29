@@ -404,37 +404,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 --------------------
-quiche
---------------------
-// Copyright 2015 The Chromium Authors. All rights reserved.
-//
-// Redistribution and use in source and binary forms, with or without
-// modification, are permitted provided that the following conditions are
-// met:
-//
-//    * Redistributions of source code must retain the above copyright
-// notice, this list of conditions and the following disclaimer.
-//    * Redistributions in binary form must reproduce the above
-// copyright notice, this list of conditions and the following disclaimer
-// in the documentation and/or other materials provided with the
-// distribution.
-//    * Neither the name of Google Inc. nor the names of its
-// contributors may be used to endorse or promote products derived from
-// this software without specific prior written permission.
-//
-// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-// "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-// LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-// A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
-// OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
-// SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
-// LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-// DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-// THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-// OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
---------------------
 abseil-cpp
 --------------------
 
@@ -646,7 +615,7 @@ fiat
 --------------------
 The MIT License (MIT)
 
-Copyright (c) 2015-2016 the fiat-crypto authors (see
+Copyright (c) 2015-2020 the fiat-crypto authors (see
 https://github.com/mit-plv/fiat-crypto/blob/master/AUTHORS).
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -1131,6 +1100,62 @@ compatible with the LGPL.
 
 ********************************************************************************
 
+libavcodec/arm/vp8dsp_armv6.S
+
+VP8 ARMv6 optimisations
+
+Copyright (c) 2010 Google Inc.
+Copyright (c) 2010 Rob Clark <rob@ti.com>
+Copyright (c) 2011 Mans Rullgard <mans@mansr.com>
+
+This file is part of FFmpeg.
+
+FFmpeg is free software; you can redistribute it and/or
+modify it under the terms of the GNU Lesser General Public
+License as published by the Free Software Foundation; either
+version 2.1 of the License, or (at your option) any later version.
+
+FFmpeg is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public
+License along with FFmpeg; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
+
+This code was partially ported from libvpx, which uses this license:
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:
+
+* Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+
+* Redistributions in binary form must reproduce the above copyright
+notice, this list of conditions and the following disclaimer in
+the documentation and/or other materials provided with the
+distribution.
+
+* Neither the name of Google nor the names of its contributors may
+be used to endorse or promote products derived from this software
+without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+********************************************************************************
+
 libavformat/oggparsetheora.c
 
 Copyright (C) 2005  Matthieu CASTET, Alex Beregszaszi
@@ -1157,28 +1182,28 @@ DEALINGS IN THE SOFTWARE.
 
 ********************************************************************************
 
-libavutil/avsscanf.c
+libavutil/x86/x86inc.asm
 
-Copyright (c) 2005-2014 Rich Felker, et al.
+x86inc.asm: x264asm abstraction layer
 
-Permission is hereby granted, free of charge, to any person obtaining
-a copy of this software and associated documentation files (the
-"Software"), to deal in the Software without restriction, including
-without limitation the rights to use, copy, modify, merge, publish,
-distribute, sublicense, and/or sell copies of the Software, and to
-permit persons to whom the Software is furnished to do so, subject to
-the following conditions:
+ Copyright (C) 2005-2018 x264 project
 
-The above copyright notice and this permission notice shall be
-included in all copies or substantial portions of the Software.
+ Authors: Loren Merritt <lorenm@u.washington.edu>
+          Henrik Gramner <henrik@gramner.com>
+          Anton Mitrofanov <BugMaster@narod.ru>
+          Fiona Glaser <fiona@x264.com>
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
-CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
-TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
-SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ Permission to use, copy, modify, and/or distribute this software for any
+ purpose with or without fee is hereby granted, provided that the above
+ copyright notice and this permission notice appear in all copies.
+
+ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 ********************************************************************************
 
@@ -1205,6 +1230,28 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
 ********************************************************************************
 
 libswresample/version.h
+
+Version macros.
+
+This file is part of libswresample
+
+libswresample is free software; you can redistribute it and/or
+modify it under the terms of the GNU Lesser General Public
+License as published by the Free Software Foundation; either
+version 2.1 of the License, or (at your option) any later version.
+
+libswresample is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public
+License along with libswresample; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
+
+********************************************************************************
+
+libswresample/version_major.h
 
 Version macros.
 
@@ -2027,9 +2074,22 @@ PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
 --------------------
 icu
 --------------------
-COPYRIGHT AND PERMISSION NOTICE (ICU 58 and later)
+UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE
 
-Copyright © 1991-2020 Unicode, Inc. All rights reserved.
+See Terms of Use <https://www.unicode.org/copyright.html>
+for definitions of Unicode Inc.’s Data Files and Software.
+
+NOTICE TO USER: Carefully read the following legal agreement.
+BY DOWNLOADING, INSTALLING, COPYING OR OTHERWISE USING UNICODE INC.'S
+DATA FILES ("DATA FILES"), AND/OR SOFTWARE ("SOFTWARE"),
+YOU UNEQUIVOCALLY ACCEPT, AND AGREE TO BE BOUND BY, ALL OF THE
+TERMS AND CONDITIONS OF THIS AGREEMENT.
+IF YOU DO NOT AGREE, DO NOT DOWNLOAD, INSTALL, COPY, DISTRIBUTE OR USE
+THE DATA FILES OR SOFTWARE.
+
+COPYRIGHT AND PERMISSION NOTICE
+
+Copyright © 1991-2022 Unicode, Inc. All rights reserved.
 Distributed under the Terms of Use in https://www.unicode.org/copyright.html.
 
 Permission is hereby granted, free of charge, to any person obtaining
@@ -2061,7 +2121,7 @@ shall not be used in advertising or otherwise to promote the sale,
 use or other dealings in these Data Files or Software without prior
 written authorization of the copyright holder.
 
----------------------
+----------------------------------------------------------------------
 
 Third-Party Software Licenses
 
@@ -2069,7 +2129,9 @@ This section contains third-party software notices and/or additional
 terms for licensed third-party software components included within ICU
 libraries.
 
-1. ICU License - ICU 1.8.1 to ICU 57.1
+----------------------------------------------------------------------
+
+ICU License - ICU 1.8.1 to ICU 57.1
 
 COPYRIGHT AND PERMISSION NOTICE
 
@@ -2104,7 +2166,9 @@ of the copyright holder.
 All trademarks and registered trademarks mentioned herein are the
 property of their respective owners.
 
-2. Chinese/Japanese Word Break Dictionary Data (cjdict.txt)
+----------------------------------------------------------------------
+
+Chinese/Japanese Word Break Dictionary Data (cjdict.txt)
 
  #     The Google Chrome software developed by Google is licensed under
  # the BSD license. Other software included in this distribution is
@@ -2308,7 +2372,9 @@ property of their respective owners.
  #
  #  ---------------COPYING.ipadic-----END----------------------------------
 
-3. Lao Word Break Dictionary Data (laodict.txt)
+----------------------------------------------------------------------
+
+Lao Word Break Dictionary Data (laodict.txt)
 
  # Copyright (C) 2016 and later: Unicode, Inc. and others.
  # License & terms of use: http://www.unicode.org/copyright.html
@@ -2348,7 +2414,9 @@ property of their respective owners.
  # OF THE POSSIBILITY OF SUCH DAMAGE.
  #  --------------------------------------------------------------------------
 
-4. Burmese Word Break Dictionary Data (burmesedict.txt)
+----------------------------------------------------------------------
+
+Burmese Word Break Dictionary Data (burmesedict.txt)
 
  #  Copyright (c) 2014 International Business Machines Corporation
  #  and others. All Rights Reserved.
@@ -2388,7 +2456,9 @@ property of their respective owners.
  #  SUCH DAMAGE.
  #  --------------------------------------------------------------------------
 
-5. Time Zone Database
+----------------------------------------------------------------------
+
+Time Zone Database
 
   ICU uses the public domain data and code derived from Time Zone
 Database for its time zone support. The ownership of the TZ database
@@ -2411,7 +2481,9 @@ Database section 7.
  #    making a contribution to the database or code waives all rights to
  #    future claims in that contribution or in the TZ Database.
 
-6. Google double-conversion
+----------------------------------------------------------------------
+
+Google double-conversion
 
 Copyright 2006-2011, the V8 project authors. All rights reserved.
 Redistribution and use in source and binary forms, with or without
@@ -2439,6 +2511,88 @@ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
 THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+----------------------------------------------------------------------
+
+File: aclocal.m4 (only for ICU4C)
+Section: pkg.m4 - Macros to locate and utilise pkg-config.
+
+
+Copyright © 2004 Scott James Remnant <scott@netsplit.com>.
+Copyright © 2012-2015 Dan Nicholson <dbn.lists@gmail.com>
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
+02111-1307, USA.
+
+As a special exception to the GNU General Public License, if you
+distribute this file as part of a program that contains a
+configuration script generated by Autoconf, you may include it under
+the same distribution terms that you use for the rest of that
+program.
+
+
+(The condition for the exception is fulfilled because
+ICU4C includes a configuration script generated by Autoconf,
+namely the `configure` script.)
+
+----------------------------------------------------------------------
+
+File: config.guess (only for ICU4C)
+
+
+This file is free software; you can redistribute it and/or modify it
+under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, see <https://www.gnu.org/licenses/>.
+
+As a special exception to the GNU General Public License, if you
+distribute this file as part of a program that contains a
+configuration script generated by Autoconf, you may include it under
+the same distribution terms that you use for the rest of that
+program.  This Exception is an additional permission under section 7
+of the GNU General Public License, version 3 ("GPLv3").
+
+
+(The condition for the exception is fulfilled because
+ICU4C includes a configuration script generated by Autoconf,
+namely the `configure` script.)
+
+----------------------------------------------------------------------
+
+File: install-sh (only for ICU4C)
+
+
+Copyright 1991 by the Massachusetts Institute of Technology
+
+Permission to use, copy, modify, distribute, and sell this software and its
+documentation for any purpose is hereby granted without fee, provided that
+the above copyright notice appear in all copies and that both that
+copyright notice and this permission notice appear in supporting
+documentation, and that the name of M.I.T. not be used in advertising or
+publicity pertaining to distribution of the software without specific,
+written prior permission.  M.I.T. makes no representations about the
+suitability of this software for any purpose.  It is provided "as is"
+without express or implied warranty.
 
 --------------------
 jsoncpp
@@ -2595,7 +2749,7 @@ best of our understanding.
 The Modified (3-clause) BSD License
 ===================================
 
-Copyright (C)2009-2021 D. R. Commander.  All Rights Reserved.<br>
+Copyright (C)2009-2022 D. R. Commander.  All Rights Reserved.<br>
 Copyright (C)2015 Viktor Szathmáry.  All Rights Reserved.
 
 Redistribution and use in source and binary forms, with or without
@@ -3636,40 +3790,6 @@ a legal notice, here is a blessing:
    May you share freely, never taking more than you give.
 
 --------------------
-usrsctp
---------------------
-(Copied from the COPYRIGHT file of
-https://code.google.com/p/sctp-refimpl/source/browse/trunk/COPYRIGHT)
---------------------------------------------------------------------------------
-
-Copyright (c) 2001, 2002 Cisco Systems, Inc.
-Copyright (c) 2002-12 Randall R. Stewart
-Copyright (c) 2002-12 Michael Tuexen
-All rights reserved.
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions
-are met:
-
-1. Redistributions of source code must retain the above copyright
-   notice, this list of conditions and the following disclaimer.
-2. Redistributions in binary form must reproduce the above copyright
-   notice, this list of conditions and the following disclaimer in the
-   documentation and/or other materials provided with the distribution.
-
-THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND
-ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
-ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE
-FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
-DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
-OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
-HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
-LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
-OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
-SUCH DAMAGE.
-
---------------------
 webrtc
 --------------------
 Copyright (c) 2011, The WebRTC project authors. All rights reserved.
@@ -3886,9 +4006,9 @@ wuffs
 --------------------
 zlib
 --------------------
-version 1.2.11, January 15th, 2017
+version 1.2.12, March 27th, 2022
 
-Copyright (C) 1995-2017 Jean-loup Gailly and Mark Adler
+Copyright (C) 1995-2022 Jean-loup Gailly and Mark Adler
 
 This software is provided 'as-is', without any express or implied
 warranty.  In no event will the authors be held liable for any damages
